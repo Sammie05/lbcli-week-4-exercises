@@ -20,7 +20,7 @@ absolute_timeblock=$((current_block + 2016))
 
 #Define input and output
 
-timelock_input='[{"txid":"'$TXID'","vout":0}' '{"txid":"'$TXID'","vout":1}]'
+timelock_input='[{"txid":"'$TXID'","vout":0},{"txid":"'$TXID'","vout":1}]'
 timelock_output='[{"'$recipient'":'$amount'}]'
 
 
