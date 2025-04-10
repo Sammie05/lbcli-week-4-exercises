@@ -17,7 +17,7 @@ amount=0.200000000
 tx_inputs='[{"txid":"'$TXID'","vout":0},{"txid":"'$TXID'","vout":1}]'
 
 message="btrust builder 2025"
-message_hex=$(echo -n "$MESSAGE" | xxd -p | tr -d '\n')
+message_hex=$(echo -n "$message" | xxd -p | tr -d '\n')
 
 #Define the outputs (first the OP_RETURN, then the recipient)
 tx_outputs='[{"data":"'$message_hex'"},{"'$recipient'": '$amount'}]'
