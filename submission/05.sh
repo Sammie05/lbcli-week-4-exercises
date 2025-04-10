@@ -5,4 +5,4 @@ raw_tx="0200000001d54e767769b3c3b8707115f748c88f7323def5b78147628aa071fdcf2fdf73
 
 unlocking_script=$(bitcoin-cli -regtest decoderawtransaction "$raw_tx" | jq -r '.vin[0].scriptSig.hex')
 
-echo "$unlocking_script
+echo "$unlocking_script"
