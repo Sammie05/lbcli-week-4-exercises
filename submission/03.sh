@@ -10,7 +10,7 @@ decode_tx=$(bitcoin-cli -regtest decoderawtransaction "$transaction")
 
 TXID=$(echo "$decode_tx" | jq -r '.txid')
 
-recipient="2MvLcssW49n9atmksjwg2ZCMsEMsoj"
+recipient="2MvLcssW49n9atmksjwg2ZCMsEMsoj3pzUP"
 
 amount=0.200000000
 
